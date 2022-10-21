@@ -11,7 +11,7 @@ def getwiki(s):
     try:
         ny = wikipedia.page(s)
         # Получаем первую тысячу символов
-        wikitext = ny.content[:2000]
+        wikitext = ny.content[:1000]
         # Разделяем по точкам
         wikimas = wikitext.split('.')
         # Отбрасываем всЕ после последней точки
